@@ -1,0 +1,128 @@
+* {
+  box-sizing: border-box;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  margin: 0;
+  padding: 0;
+
+}
+/* --------build navbar in navbar.js---- */
+a:link {
+  text-decoration: none;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.menu>li {
+  list-style: none;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: black;
+  color: #fff;
+}
+
+/* .menu a:link {
+  color: #fff;
+} */
+
+.navbar-Links{
+  color: white;
+}
+
+.logo {
+  font-size: 32px;
+}
+
+.menu {
+  display: flex;
+  gap: 1em;
+  font-size: 18px;
+}
+.menu li:hover{
+  background-color: black;
+  border-radius: 5px;
+  transition:0.3s ease;
+}
+.menu li{
+  padding: 5px 14px;
+}
+/* checkbo hack */
+input[type=checkbox]{
+  display: none;
+}
+.hamburger{
+  display: none;
+  font-size: 24px;
+  user-select: none;
+}
+/* --------build navbar in navbar.js---- */
+
+/* ----------jose.js------------------ */
+.jose-container > h3 {
+  text-align: center;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  /* font-weight:normal; */
+  font-size: 2vw;
+}
+.jose-container > img{
+width: 20%;
+display: block;
+margin-left: auto;
+margin-right: auto;
+}
+
+.jose-container > p {
+  text-align: center;
+  font-size: 2vw;
+}
+.jose-container > .whats-next{
+  font-weight: bold;
+  color: maroon;
+}
+/* ----------jose.js------------------ */
+
+/* -----------media queary--------------- */
+@media (max-width: 600px) {
+  /* -------------navbar----- */
+    .menu { 
+    display:none;
+    position: absolute;
+    background-color:black;
+    right: 0;
+    left: 0;
+    text-align: center;
+    padding: 16px 0;
+    }
+    
+    .menu li:hover {
+    display: inline-block;
+    background-color:black;
+    transition: 0.3s ease;
+    }
+    
+    .menu li + li {
+    margin-top: 12px;
+    }
+    
+    input[type=checkbox]:checked ~ .menu{
+    display: block;
+    }
+    
+    .hamburger {
+    display: block;
+    }
+  }
+  /* -------------navbar----- */
+
+/* ----------jose.js------------------ */
+.jose-container > img {
+  max-width: 100%;
+  height: auto;
+}
+/* ----------jose.js------------------ */
+
+
+/* -----------media queary--------------- */
