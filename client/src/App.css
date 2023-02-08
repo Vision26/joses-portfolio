@@ -321,6 +321,47 @@ input[type=checkbox] {
 
 /* ---------------project.js-------------- */
 
+/* --------------------contact.js----------- */
+.contact-container{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: repeat(8, 70px);
+  grid-gap: 0.6rem;
+  margin: 5px;
+  padding: 5px;
+  text-align: center;
+  background-color: black;
+}
+.contact-container > div > a >img {
+  width: 75%;
+height: 80%;
+border-radius: 30px;
+}
+.contact-a {
+  grid-column: 7 / 8;
+  grid-row: 3 / 4;
+}
+.contact-b{
+  grid-column: 7 / 8;
+  grid-row: 4 / 5;
+
+}
+.contact-container > .h-tags{
+ color: white;
+ grid-column: 6 / 9;
+ grid-row: 5 / 6; 
+ font-size: 66%;
+}
+.h-tags h2 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: lighter;
+}
+.h-tags h3 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: lighter;
+}
+/* --------------------contact.js-----------  */
+
 /* ----------footer----------- */
 
 .footer-content {
@@ -586,6 +627,47 @@ input[type=checkbox] {
   }
 
   /* ----------jose.js------------------ */
+
+  /* ----------------contact.js---------- */
+  .contact-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr ;
+    grid-template-rows: repeat(7, 50px);
+    grid-gap: 0.6rem;
+    margin: 5px;
+    padding: 5px;
+    text-align: center;
+    background-color: black;
+  }
+  .contact-container > div > a >img {
+    width:50%;
+  height: 60%;
+  /* border-radius: 30px; */
+  }
+  .contact-a {
+    grid-column: 4 / 5;
+    grid-row: 3 / 4;
+  }
+  .contact-b{
+    grid-column: 4 / 5;
+    grid-row: 4 / 5;
+  }
+   .contact-container > .h-tags{
+    color: white;
+    grid-column: 3 / 6;
+    grid-row: 5 / 6; 
+   }
+   .h-tags h2 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: lighter;
+    font-size: 10px;
+  }
+  .h-tags h3 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: lighter;
+    font-size: 10px;
+  }
+    /* ----------------contact.js---------- */
 
 }
 
