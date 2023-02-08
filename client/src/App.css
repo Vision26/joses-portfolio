@@ -1,14 +1,16 @@
 * {
   box-sizing: border-box;
-  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   margin: 0;
   padding: 0;
 
 }
+
 /* --------build navbar in navbar.js---- */
 a:link {
   text-decoration: none;
-  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  /* color: black; */
 }
 
 .menu>li {
@@ -20,16 +22,15 @@ a:link {
   align-items: center;
   justify-content: space-between;
   padding: 20px;
-  background-color: black;
-  color: #fff;
+  background-color: white;
 }
 
 /* .menu a:link {
   color: #fff;
 } */
 
-.navbar-Links{
-  color: white;
+.navbar-Links {
+  color: black;
 }
 
 .logo {
@@ -41,88 +42,551 @@ a:link {
   gap: 1em;
   font-size: 18px;
 }
-.menu li:hover{
-  background-color: black;
+
+.menu li:hover {
+  background-color: whitesmoke;
   border-radius: 5px;
-  transition:0.3s ease;
+  transition: 0.3s ease;
 }
-.menu li{
+
+.menu li {
   padding: 5px 14px;
 }
+
 /* checkbo hack */
-input[type=checkbox]{
+input[type=checkbox] {
   display: none;
 }
-.hamburger{
+
+.hamburger {
   display: none;
   font-size: 24px;
   user-select: none;
 }
+
+.hamburger:hover {
+  cursor: pointer;
+}
+
 /* --------build navbar in navbar.js---- */
 
 /* ----------jose.js------------------ */
-.jose-container > h3 {
-  text-align: center;
-  font-family:Verdana, Geneva, Tahoma, sans-serif;
-  /* font-weight:normal; */
-  font-size: 2vw;
-}
-.jose-container > img{
-width: 20%;
-display: block;
-margin-left: auto;
-margin-right: auto;
+.jose-container {
+  background-color: black;
+  padding: 20%;
 }
 
-.jose-container > p {
+.jose-container>h2 {
+  color: whitesmoke;
+  text-align: center;
+  color: darkcyan;
+}
+
+.jose-container>h3 {
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  /* font-weight:normal; */
+  font-size: 2vw;
+  color: whitesmoke;
+}
+
+.jose-container>img {
+  width: 20%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.jose-container>p {
   text-align: center;
   font-size: 2vw;
+  color: whitesmoke;
 }
-.jose-container > .whats-next{
-  font-weight: bold;
-  color: maroon;
+
+.jose-container>.whats-next {
+  /* font-weight: bold; */
+  color: whitesmoke;
+  font-size: 1vw;
 }
+
 /* ----------jose.js------------------ */
+
+/* ---------------project.js-------------- */
+.project-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: repeat(3, 200px);
+  grid-gap: 0.8rem;
+  margin: 5px;
+  padding: 5px;
+}
+.project-container > div > a{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.project-container>.project-a {
+  background-color: gainsboro;
+  width: 100%;
+  height: 100%;
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+}
+.project-container>.project-a:hover {
+  cursor: pointer;
+  background-color: rgb(222, 165, 165);
+  width: 100%;
+  height: 100%;
+  transition: background-color 120ms ease-in 10ms;
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+}
+.project-container > .project-a > .project-a-dofo{
+  color: gainsboro;
+}
+.project-container > .project-a > .project-a-dofo:hover{
+  color: rgb(222, 165, 165);
+}
+
+.project-container>.project-b {
+  background-color: gainsboro;
+  width: 100%;
+  height: 100%;
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
+}
+.project-container>.project-b:hover {
+  cursor: pointer;
+  background-color: rgb(226, 144, 144);
+  width: 100%;
+  height: 100%;
+  transition: background-color 120ms, ease-in 10ms;
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
+}
+.project-container > .project-b > .project-b-shoe{
+  color: gainsboro;
+}
+.project-container > .project-b > .project-b-shoe:hover{
+  color: rgb(226, 144, 144);
+}
+
+.project-container>.project-c {
+  background-color: gainsboro;
+  width: 100%;
+  height: 100%;
+  grid-column: 3 / 4;
+  grid-row: 1 / 2;
+}
+.project-container>.project-c:hover {
+  cursor: pointer;
+  background-color: rgb(192, 109, 109);
+  width: 100%;
+  height: 100%;
+  transition: background-color 120ms, ease-in 10ms;
+  grid-column: 3 / 4;
+  grid-row: 1 / 2;
+}
+.project-container > .project-c > .project-c-ugly{
+  color: gainsboro;
+}
+.project-container > .project-c > .project-c-ugly:hover{
+  color: rgb(192, 109, 109);
+}
+
+.project-container>.project-d {
+  background-color: grey;
+  width: 100%;
+  height: 100%;
+  grid-column: 1 / 2;
+  grid-row: 2 / 3;
+}
+.project-container>.project-d:hover {
+  cursor: pointer;
+  background-color: rgb(153, 186, 206);
+  width: 100%;
+  height: 100%;
+  transition: background-color 120ms, ease-in 10ms;
+  grid-column: 1 / 2;
+  grid-row: 2 / 3;
+}
+.project-container > .project-d > .project-d-rock{
+  color: grey;
+}
+.project-container > .project-d > .project-d-rock:hover{
+  color: rgb(153, 186, 206);
+}
+
+.project-container>.project-e {
+  background-color: grey;
+  width: 100%;
+  height: 100%;
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+}
+.project-container>.project-e:hover {
+  cursor: pointer;
+  background-color: rgb(108, 161, 196);
+  width: 100%;
+  height: 100%;
+  transition: background-color 120ms, ease-in 10ms;
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+}
+.project-container > .project-e > .project-e-rolling{
+  color: grey;
+}
+.project-container > .project-e > .project-e-rolling:hover{
+  color: rgb(108, 161, 196);
+}
+
+.project-container>.project-f {
+  background-color: grey;
+  width: 100%;
+  height: 100%;
+  grid-column: 3 / 4;
+  grid-row: 2 / 3;
+}
+.project-container>.project-f:hover {
+  cursor: pointer;
+  background-color: rgb(86, 126, 157);
+  width: 100%;
+  height: 100%;
+  transition: background-color 120ms, ease-in 10ms;
+  grid-column: 3 / 4;
+  grid-row: 2 / 3;
+}
+.project-container > .project-f > .project-f-meme{
+  color: grey;
+}
+.project-container > .project-f > .project-f-meme:hover{
+  color: rgb(86, 126, 157);
+}
+
+.project-container>.project-g {
+  background-color: black;
+  width: 100%;
+  height: 100%;
+  grid-column: 1 / 2;
+  grid-row: 3 / 4;
+}
+
+.project-container>.project-g:hover {
+  cursor: pointer;
+  background-color: rgb(194, 224, 172);
+  width: 100%;
+  height: 100%;
+  transition: background-color 120ms, ease-in 10ms;
+  grid-column: 1 / 2;
+  grid-row: 3 / 4;
+}
+
+.project-container>.project-h {
+  background-color: black;
+  width: 100%;
+  height: 100%;
+  grid-column: 2 / 3;
+  grid-row: 3 / 4;
+}
+
+.project-container>.project-h:hover {
+  cursor: pointer;
+  background-color: rgb(159, 188, 124);
+  width: 100%;
+  height: 100%;
+  transition: background-color 120ms, ease-in 10ms;
+  grid-column: 2 / 3;
+  grid-row: 3 / 4;
+}
+
+.project-container>.project-i {
+  background-color: black;
+  width: 100%;
+  height: 100%;
+  grid-column: 3 / 4;
+  grid-row: 3 / 4;
+}
+
+.project-container>.project-i:hover {
+  cursor: pointer;
+  background-color: rgb(97, 130, 82);
+  width: 100%;
+  height: 100%;
+  transition: background-color 120ms, ease-in 10ms;
+  grid-column: 3 / 4;
+  grid-row: 3 / 4;
+}
+
+/* ---------------project.js-------------- */
+
+/* ----------footer----------- */
+
+.footer-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  background-color: white;
+  /* background-color: rgb(38, 78, 81); */
+
+}
+
+.footer-bottom {
+  background: white;
+  width: 100%;
+  padding: 5px;
+  padding-bottom: 1px;
+  text-align: center;
+}
+
+.footer-bottom p {
+  float: left;
+  font-size: 2vw;
+  word-spacing: 2px;
+  text-transform: capitalize;
+}
+
+.footer-bottom>p>a {
+  color: black;
+}
+
+/* ------------footer.js---------------- */
 
 /* -----------media queary--------------- */
 @media (max-width: 600px) {
+  * {
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+    padding: 0;
+
+  }
+
   /* -------------navbar----- */
-    .menu { 
-    display:none;
+  .menu {
+    display: none;
     position: absolute;
-    background-color:black;
+    background-color: black;
     right: 0;
     left: 0;
     text-align: center;
     padding: 16px 0;
-    }
-    
-    .menu li:hover {
-    display: inline-block;
-    background-color:black;
-    transition: 0.3s ease;
-    }
-    
-    .menu li + li {
-    margin-top: 12px;
-    }
-    
-    input[type=checkbox]:checked ~ .menu{
-    display: block;
-    }
-    
-    .hamburger {
-    display: block;
-    }
+
   }
+
+  .menu li:hover {
+    display: inline-block;
+    background-color: whitesmoke;
+    transition: 0.3s ease;
+  }
+
+  .menu li+li {
+    margin-top: 12px;
+  }
+
+  input[type=checkbox]:checked~.menu {
+    display: block;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .navbar-Links {
+    color: whitesmoke;
+  }
+
+  .navbar-Links:hover {
+    background-color: white;
+    color: black;
+  }
+
   /* -------------navbar----- */
 
-/* ----------jose.js------------------ */
-.jose-container > img {
-  max-width: 100%;
-  height: auto;
-}
-/* ----------jose.js------------------ */
+  /* ----------project.js----------------- */
+  .project-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(9, 80px);
+    grid-gap: 0.8rem;
+    margin: 10px;
+    padding: 10px;
+  }
 
+  .project-container>.project-a {
+    background-color: gainsboro;
+    width: 100%;
+    height: 100%;
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+  }
+  .project-container>.project-a:hover {
+    cursor: pointer;
+    background-color: rgb(222, 165, 165);
+    width: 100%;
+    height: 100%;
+    transition: background-color 120ms ease-in 10ms;
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+  }
+
+  .project-container>.project-b {
+    background-color: gainsboro;
+    width: 100%;
+    height: 100%;
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+  }
+  .project-container>.project-b:hover {
+    cursor: pointer;
+    background-color: rgb(226, 144, 144);
+    width: 100%;
+    height: 100%;
+    transition: background-color 120ms, ease-in 10ms;
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+  }
+
+  .project-container>.project-c {
+    background-color: gainsboro;
+    width: 100%;
+    height: 100%;
+    grid-column: 1 / 2;
+    grid-row: 3 / 4;
+  }
+  .project-container>.project-c:hover {
+    cursor: pointer;
+    background-color: rgb(192, 109, 109);
+    width: 100%;
+    height: 100%;
+    transition: background-color 120ms, ease-in 10ms;
+    grid-column: 1 / 2;
+    grid-row: 3 / 4;
+  }
+
+  .project-container>.project-d {
+    background-color: grey;
+    width: 100%;
+    height: 100%;
+    grid-column: 1 / 2;
+    grid-row: 4 / 5;
+  }
+  .project-container>.project-d:hover {
+    cursor: pointer;
+    background-color: rgb(153, 186, 206);
+    width: 100%;
+    height: 100%;
+    transition: background-color 120ms, ease-in 10ms;
+    grid-column: 1 / 2;
+    grid-row: 4 / 5;
+  }
+
+  .project-container>.project-e {
+    background-color: grey;
+    width: 100%;
+    height: 100%;
+    grid-column: 1 / 2;
+    grid-row: 5 / 6;
+  }
+  .project-container>.project-e:hover {
+    cursor: pointer;
+    background-color: rgb(108, 161, 196);
+    width: 100%;
+    height: 100%;
+    transition: background-color 120ms, ease-in 10ms;
+    grid-column: 1 / 2;
+    grid-row: 5 / 6;
+  }
+
+  .project-container>.project-f {
+    width: 100%;
+    height: 100%;
+    background-color: grey;
+    grid-column: 1 / 2;
+    grid-row: 6 / 7;
+  }
+  .project-container>.project-f:hover {
+    cursor: pointer;
+    background-color: rgb(86, 126, 157);
+    width: 100%;
+    height: 100%;
+    transition: background-color 120ms, ease-in 10ms;
+    grid-column: 1 / 2;
+    grid-row: 6 / 7;
+  }
+
+  .project-container>.project-g {
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    grid-column: 1 / 2;
+    grid-row: 7 / 8;
+  }
+  .project-container>.project-g:hover {
+    cursor: pointer;
+    background-color: rgb(194, 224, 172);
+    width: 100%;
+    height: 100%;
+    transition: background-color 120ms, ease-in 10ms;
+    grid-column: 1 / 2;
+    grid-row: 7 / 8;
+  }
+
+  .project-container>.project-h {
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    grid-column: 1 / 2;
+    grid-row: 8 / 9;
+  }
+  .project-container>.project-h:hover {
+    cursor: pointer;
+    background-color: rgb(159, 188, 124);
+    width: 100%;
+    height: 100%;
+    transition: background-color 120ms, ease-in 10ms;
+    grid-column: 1 / 2;
+    grid-row: 8 / 9;
+  }
+
+  .project-container>.project-i {
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    grid-column: 1 / 2;
+    grid-row: 9 / 10;
+  }
+  .project-container>.project-i:hover {
+    cursor: pointer;
+    background-color: rgb(97, 130, 82);
+    width: 100%;
+    height: 100%;
+    transition: background-color 120ms, ease-in 10ms;
+    grid-column: 1 / 2;
+    grid-row: 9 / 10;
+  }
+
+  /* ----------project.js----------------- */
+
+  /* ----------jose.js------------------ */
+  .jose-container {
+    padding: 25%;
+  }
+
+  .jose-container>.full-stack-web-developer {
+    font-size: 1.9vw;
+  }
+
+  .jose-container>img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  /* ----------jose.js------------------ */
+
+}
 
 /* -----------media queary--------------- */

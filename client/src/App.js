@@ -5,6 +5,7 @@ import './App.css'
 import Jose from './components/Jose'
 import Contact from './components/Contact'
 import Projects from './components/Projects'
+import Footer from './Footer'
 
 
 function App() {
@@ -26,6 +27,7 @@ function App() {
           element={<Projects />}
         />
       </Routes>
+      <Footer />
     </div>
   )
 }
