@@ -12,13 +12,13 @@ function Jose(){
             <br/>
             <h3 className='full-stack-web-developer'>F U L L S T A C K | W E B | D E V E L O P E R</h3>
             <br/>
-            <p>LIVE CREATIVE. LIVE CHALLENGED. LIVE FULFILLED.</p>
+            <p></p>
             {/* <p>LIVE.</p> */}
             <br/>
             <br/>
-            <p className='whats-next'>L I V E | | | C O D E.</p>
+            {/* <p className='whats-next'>L I V E | | | C O D E.</p> */}
             <br/>
-            <p className='whats-next'>| NEVER STOP LEARNING. |</p>
+            {/* <p className='whats-next'>| NEVER STOP LEARNING. |</p> */}
         </div>
     )
 }
