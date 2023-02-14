@@ -30,11 +30,12 @@ a:link {
 } */
 
 .navbar-Links {
-  color: black;
+  color: darkcyan;
 }
 
 .logo {
   font-size: 32px;
+  /* color: antiquewhite; */
 }
 
 .menu {
@@ -72,14 +73,14 @@ input[type=checkbox] {
 
 /* ----------jose.js------------------ */
 .jose-container {
-  background-color: black;
+  background-color: darkcyan;
   padding: 20%;
 }
 
 .jose-container>h2 {
-  color: whitesmoke;
+  /* color: whitesmoe; */
   text-align: center;
-  color: darkcyan;
+  color: wheat;
 }
 
 .jose-container>h3 {
@@ -87,11 +88,12 @@ input[type=checkbox] {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   /* font-weight:normal; */
   font-size: 2vw;
-  color: whitesmoke;
+  color: antiquewhite;
 }
 
-.jose-container>img {
-  width: 20%;
+.jose-container > img {
+  width: 60%;
+  height: 60%;
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -100,35 +102,92 @@ input[type=checkbox] {
 .jose-container>p {
   text-align: center;
   font-size: 2vw;
-  color: whitesmoke;
+  color: antiquewhite;
 }
 
 .jose-container>.whats-next {
   /* font-weight: bold; */
-  color: whitesmoke;
+  color: wheat;
   font-size: 1vw;
 }
 
 /* ----------jose.js------------------ */
+/* ----------About.js----------- */
+.about-container{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: repeat(3, 300px);
+  background-color: darkcyan;
+  width: 100%;
+  height: 100%;
+}
+.about-container > div {
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
+  color: white;
+}
+.about-container > div > h1 {
+  font-size: 50px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: lighter;
+  text-align: center;
+  color:antiquewhite;
+}
+.about-container > div > main > p {
+  font-size: 17px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: lighter;
+  text-align: center;
+  color: wheat;
+}
+ .about-container > .list{
+  grid-column: 1 / 4;
+  grid-row: 2 / 4;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  color: antiquewhite;
+}
+.list > ul {
+  display: block;
+  list-style-type: disc;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 40px;
+  
+}
+li {
+  color: wheat;
+}
+/* .about-container > h3 {
+  grid-column: 2 / 3;
+  grid-row: 3 / 4;
+  text-align: center;
+} */
+/* ----------About.js----------- */
 
 /* ---------------project.js-------------- */
 .project-container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: repeat(3, 200px);
-  grid-gap: 0.8rem;
+  grid-gap: 1.5rem;
   margin: 5px;
   padding: 5px;
+  color: cadetblue;
 }
-.project-container > div > a{
+/* .project-container > div > a{
   display: flex;
   flex-direction: row;
   justify-content: center;
   font-family:Verdana, Geneva, Tahoma, sans-serif;
-}
+} */
 
-.project-container>.project-a {
-  background-color: gainsboro;
+.project-container>.project-a > a >img {
+  /* background-color: gainsboro; */
   width: 100%;
   height: 100%;
   grid-column: 1 / 2;
@@ -136,22 +195,17 @@ input[type=checkbox] {
 }
 .project-container>.project-a:hover {
   cursor: pointer;
-  background-color: rgb(222, 165, 165);
-  width: 100%;
-  height: 100%;
-  transition: background-color 120ms ease-in 10ms;
-  grid-column: 1 / 2;
-  grid-row: 1 / 2;
+  opacity: 0.1;
 }
-.project-container > .project-a > .project-a-dofo{
+/* .project-container > .project-a > .project-a-dofo{
   color: gainsboro;
 }
 .project-container > .project-a > .project-a-dofo:hover{
   color: rgb(222, 165, 165);
-}
+} */
 
-.project-container>.project-b {
-  background-color: gainsboro;
+.project-container > .project-b > a > img{
+  /* background-color: gainsboro; */
   width: 100%;
   height: 100%;
   grid-column: 2 / 3;
@@ -159,22 +213,17 @@ input[type=checkbox] {
 }
 .project-container>.project-b:hover {
   cursor: pointer;
-  background-color: rgb(226, 144, 144);
-  width: 100%;
-  height: 100%;
-  transition: background-color 120ms, ease-in 10ms;
-  grid-column: 2 / 3;
-  grid-row: 1 / 2;
+  opacity: 0.1;
 }
-.project-container > .project-b > .project-b-shoe{
+/* .project-container > .project-b > .project-b-shoe{
   color: gainsboro;
 }
 .project-container > .project-b > .project-b-shoe:hover{
   color: rgb(226, 144, 144);
-}
+} */
 
-.project-container>.project-c {
-  background-color: gainsboro;
+.project-container>.project-c > a > img{
+  /* background-color: gainsboro; */
   width: 100%;
   height: 100%;
   grid-column: 3 / 4;
@@ -182,22 +231,17 @@ input[type=checkbox] {
 }
 .project-container>.project-c:hover {
   cursor: pointer;
-  background-color: rgb(192, 109, 109);
-  width: 100%;
-  height: 100%;
-  transition: background-color 120ms, ease-in 10ms;
-  grid-column: 3 / 4;
-  grid-row: 1 / 2;
+  opacity: 0.1;
 }
-.project-container > .project-c > .project-c-ugly{
+/* .project-container > .project-c > .project-c-ugly{
   color: gainsboro;
 }
 .project-container > .project-c > .project-c-ugly:hover{
   color: rgb(192, 109, 109);
-}
+} */
 
-.project-container>.project-d {
-  background-color: grey;
+.project-container>.project-d > a > img{
+  /* background-color: grey; */
   width: 100%;
   height: 100%;
   grid-column: 1 / 2;
@@ -205,22 +249,17 @@ input[type=checkbox] {
 }
 .project-container>.project-d:hover {
   cursor: pointer;
-  background-color: rgb(153, 186, 206);
-  width: 100%;
-  height: 100%;
-  transition: background-color 120ms, ease-in 10ms;
-  grid-column: 1 / 2;
-  grid-row: 2 / 3;
+  opacity: 0.1;
 }
-.project-container > .project-d > .project-d-rock{
+/* .project-container > .project-d > .project-d-rock{
   color: grey;
 }
 .project-container > .project-d > .project-d-rock:hover{
   color: rgb(153, 186, 206);
-}
+} */
 
-.project-container>.project-e {
-  background-color: grey;
+.project-container>.project-e > a > img{
+  /* background-color: grey; */
   width: 100%;
   height: 100%;
   grid-column: 2 / 3;
@@ -228,22 +267,17 @@ input[type=checkbox] {
 }
 .project-container>.project-e:hover {
   cursor: pointer;
-  background-color: rgb(108, 161, 196);
-  width: 100%;
-  height: 100%;
-  transition: background-color 120ms, ease-in 10ms;
-  grid-column: 2 / 3;
-  grid-row: 2 / 3;
+  opacity: 0.1;
 }
-.project-container > .project-e > .project-e-rolling{
+/* .project-container > .project-e > .project-e-rolling{
   color: grey;
 }
 .project-container > .project-e > .project-e-rolling:hover{
   color: rgb(108, 161, 196);
-}
+} */
 
-.project-container>.project-f {
-  background-color: grey;
+.project-container>.project-f > a > img{
+  /* background-color: grey; */
   width: 100%;
   height: 100%;
   grid-column: 3 / 4;
@@ -251,22 +285,17 @@ input[type=checkbox] {
 }
 .project-container>.project-f:hover {
   cursor: pointer;
-  background-color: rgb(86, 126, 157);
-  width: 100%;
-  height: 100%;
-  transition: background-color 120ms, ease-in 10ms;
-  grid-column: 3 / 4;
-  grid-row: 2 / 3;
+  opacity: 0.1;
 }
-.project-container > .project-f > .project-f-meme{
+/* .project-container > .project-f > .project-f-meme{
   color: grey;
 }
 .project-container > .project-f > .project-f-meme:hover{
   color: rgb(86, 126, 157);
-}
+} */
 
-.project-container>.project-g {
-  background-color: black;
+.project-container>.project-g > a > img{
+  /* background-color: black; */
   width: 100%;
   height: 100%;
   grid-column: 1 / 2;
@@ -275,65 +304,50 @@ input[type=checkbox] {
 
 .project-container>.project-g:hover {
   cursor: pointer;
-  background-color: rgb(194, 224, 172);
-  width: 100%;
-  height: 100%;
-  transition: background-color 120ms, ease-in 10ms;
-  grid-column: 1 / 2;
-  grid-row: 3 / 4;
+  opacity: 0.1;
 }
-.project-container > .project-g > .project-g-escape{
+/* .project-container > .project-g > .project-g-escape{
   color: black;
 }
 .project-container > .project-g > .project-g-escape:hover{
   color:rgb(194, 224, 172);
-}
+} */
 
-.project-container>.project-h {
-  background-color: black;
+.project-container>.project-h > a > img{
+  /* background-color: black; */
   width: 100%;
   height: 100%;
   grid-column: 2 / 3;
   grid-row: 3 / 4;
 }
-.project-container>.project-h:hover {
+ .project-container>.project-h:hover {
   cursor: pointer;
-  background-color: rgb(159, 188, 124);
-  width: 100%;
-  height: 100%;
-  transition: background-color 120ms, ease-in 10ms;
-  grid-column: 2 / 3;
-  grid-row: 3 / 4;
+  opacity: 0.1;
 }
-.project-container > .project-h > .project-h-colossal{
+/* .project-container > .project-h > .project-h-colossal{
   color: black;
 }
 .project-container > .project-h > .project-h-colossal:hover{
   color:rgb(159, 188, 124);
-}
+}  */
 
-.project-container>.project-i {
-  background-color: black;
+.project-container>.project-i > a > img{
+  /* background-color: black; */
   width: 100%;
   height: 100%;
   grid-column: 3 / 4;
   grid-row: 3 / 4;
 }
-.project-container>.project-i:hover {
+ .project-container>.project-i:hover {
   cursor: pointer;
-  background-color: wheat;
-  width: 100%;
-  height: 100%;
-  transition: background-color 120ms, ease-in 10ms;
-  grid-column: 3 / 4;
-  grid-row: 3 / 4;
+  opacity: 0.1;
 }
-.project-container > .project-i > .project-i-fizz{
+/* .project-container > .project-i > .project-i-fizz{
   color: black;
 }
 .project-container > .project-i > .project-i-fizz:hover{
   color:wheat;
-}
+} */ 
 
 /* ---------------project.js-------------- */
 
@@ -346,12 +360,12 @@ input[type=checkbox] {
   margin: 5px;
   padding: 5px;
   text-align: center;
-  background-color: black;
+  background-color: darkcyan;
 }
 .contact-container > div > a >img {
   width: 60%;
 height: 80%;
-border-radius: 30px;
+border-radius: 1px;
 }
 .contact-a {
   grid-column: 7 / 8;
@@ -363,7 +377,7 @@ border-radius: 30px;
 
 }
 .contact-container > .h-tags{
- color: white;
+ color: antiquewhite;
  grid-column: 6 / 9;
  grid-row: 5 / 6; 
  font-size: 66%;
@@ -404,10 +418,11 @@ border-radius: 30px;
   font-size: 2vw;
   word-spacing: 2px;
   text-transform: capitalize;
+  color: darkcyan;
 }
 
 .footer-bottom>p>a {
-  color: black;
+  color: darkcyan;
 }
 
 /* ------------footer.js---------------- */
@@ -445,7 +460,7 @@ grid-template-rows: repeat(3, 200px);
 
   .menu li:hover {
     display: inline-block;
-    background-color: whitesmoke;
+    background-color: darkcyan;
     transition: 0.3s ease;
   }
 
@@ -462,34 +477,49 @@ grid-template-rows: repeat(3, 200px);
   }
 
   .navbar-Links {
-    color: whitesmoke;
+    color: darkcyan;
   }
 
   .navbar-Links:hover {
-    background-color: white;
-    color: black;
+    background-color: darkcyan;
+    color: whitesmoke;
   }
 
   /* -------------navbar----- */
+/* -------------About.js------- */
+.about-container{
+  display: grid;
+  grid-template-columns: 1fr ;
+  grid-template-rows: repeat(3, 300px);
+  background-color: darkcyan;
+  width: 100%;
+  height: 100%;
+}
+.about-container > div {
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+  color: white;
+}
+/* -------------About.js------- */
 
   /* ----------project.js----------------- */
   .project-container {
     display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(9, 80px);
-    grid-gap: 0.8rem;
+    grid-template-columns: 375px;
+    grid-template-rows: repeat(9, 200px);
+    grid-gap: 1.5rem;
     margin: 10px;
     padding: 10px;
   }
 
-  .project-container>.project-a {
+  /* .project-container>.project-a {
     background-color: gainsboro;
     width: 100%;
     height: 100%;
     grid-column: 1 / 2;
     grid-row: 1 / 2;
-  }
-  .project-container>.project-a:hover {
+  } */
+  /* .project-container>.project-a:hover {
     cursor: pointer;
     background-color: rgb(222, 165, 165);
     width: 100%;
@@ -497,9 +527,9 @@ grid-template-rows: repeat(3, 200px);
     transition: background-color 120ms ease-in 10ms;
     grid-column: 1 / 2;
     grid-row: 1 / 2;
-  }
+  } */
 
-  .project-container>.project-b {
+  /* .project-container>.project-b {
     background-color: gainsboro;
     width: 100%;
     height: 100%;
@@ -514,9 +544,9 @@ grid-template-rows: repeat(3, 200px);
     transition: background-color 120ms, ease-in 10ms;
     grid-column: 1 / 2;
     grid-row: 2 / 3;
-  }
+  } */
 
-  .project-container>.project-c {
+  /* .project-container>.project-c {
     background-color: gainsboro;
     width: 100%;
     height: 100%;
@@ -633,7 +663,7 @@ grid-template-rows: repeat(3, 200px);
     transition: background-color 120ms, ease-in 10ms;
     grid-column: 1 / 2;
     grid-row: 9 / 10;
-  }
+  } */
 
   /* ----------project.js----------------- */
 
@@ -646,9 +676,9 @@ grid-template-rows: repeat(3, 200px);
     font-size: 1.9vw;
   }
 
-  .jose-container>img {
-    max-width: 100%;
-    height: auto;
+  .jose-container >img {
+    width: 100%;
+    height: 100%;
   }
 
   /* ----------jose.js------------------ */

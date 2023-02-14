@@ -7,6 +7,7 @@ import './App.css'
 import Jose from './components/Jose'
 import Contact from './components/Contact'
 import Projects from './components/Projects'
+import About from './components/About'
 import Footer from './Footer'
 
 
@@ -37,6 +38,11 @@ height={100} width={650} delay={400}/></div></div>
           path="/projects"
           element={<Projects />}
           loading={loading}
+        />
+        <Route 
+        path="/about"
+        element={<About />}
+        loading={loading}
         />
       </Routes>
       <Footer />
