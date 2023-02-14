@@ -378,7 +378,7 @@ border-radius: 1px;
 
 }
 .contact-container > .h-tags{
- color: antiquewhite;
+ color: black;
  grid-column: 6 / 9;
  grid-row: 5 / 6; 
  font-size: 66%;
