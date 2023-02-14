@@ -10,7 +10,9 @@ function Jose(){
             <h2>J O S E</h2>
             <br/>
             <br/>
-            <h3 className='full-stack-web-developer'>F U L L S T A C K | S O F T W A R E | E N G I N E E R</h3>
+            <h3 className='full-stack-web-developer'>| F U L L S T A C K |</h3>
+            <h3 className='full-stack-web-developer'>S O F T W A R E | E N G I N E E R</h3>
+
             <br/>
             <p>I am a full stack Software Engineer with the eagerness to learn. I love to code simple, creative, and exceptional friendly user experiences.</p>
             {/* <p>LIVE.</p> */}
