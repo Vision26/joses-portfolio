@@ -2,7 +2,7 @@ import React from 'react'
 
 function Contact(){
 const email = 'hernandezj.4567@gmail.com'
-const phone = '9 4 9 9 2 2 9 7 1 6'
+// const phone = '9 4 9 9 2 2 9 7 1 6'
 const name = 'Jose A Hernandez'
     return(
         <div className='contact-container'>
@@ -10,7 +10,6 @@ const name = 'Jose A Hernandez'
                     <div className='contact-b'><a href='https://github.com/Vision26'><img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTn11Rru16VFClaKhYzoL9yGLIwOEaggMpa1Q&usqp=CAU' alt='images'/></a></div>
                     <div className='h-tags'>
                     <h3>{email}</h3>
-                    <h2>{phone}</h2>
                     <h2>{name}</h2>
                     </div>
         </div>
